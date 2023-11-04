@@ -1,15 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@500&family=Mukta&family=Roboto&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    height: 100vh;
+
+body {
+    height: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    
+    font-family: 'Mukta', sans-serif;
+
 
 }
 
@@ -19,7 +23,6 @@ body{
 
 #hola {
     height: 500px;
-    width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,7 +30,7 @@ body{
     padding: 15px;
 }
 
-.hola--presentacion  {
+.hola--presentacion {
     height: 250px;
     width: 260px;
     display: flex;
@@ -36,40 +39,120 @@ body{
     align-items: center;
     font-size: 23px;
 }
-.imagen-chica{
+
+.imagen-chica {
     height: 240px;
     width: 280px;
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
 }
-h1{
-    color:#1188A4 ;
-    font-size: 40px;
+
+h1 {
+    color: #1188A4;
+    font-size: 50px;
+    text-shadow: 3px 1px 4px rgb(184, 183, 183);
 }
-.boton{
+
+.boton {
     height: 40px;
     width: 128px;
-    background-color:#1188A4 ;
+    background-color: #1188A4;
     border: none;
     border-radius: 20px;
 }
+
+/*coloque hover para que los botones tengan un efecto cuando se haga click en ellos */
 .boton:hover {
     color: rgba(255, 255, 255, 1);
     box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
     transition: all 0.2s ease;
 }
-a{
+
+a {
     color: white;
     text-decoration: none;
 }
-.saludos{
+
+.saludos {
     color: black;
-    font-size:28px;
+    font-size: 30px;
     font-weight: 900;
 }
-p{
-    font-size:20px ;
+
+p {
+    font-size: 20px;
     color: rgb(90, 90, 90);
+    text-align: center;
 }
 
+#conocimientos {
+    width: 337px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: auto;
+    background-color: #f5fdfd;
+    border-radius: 20px;
+    margin-top: 30px;
+
+}
+
+.contenedor-conocimientos {
+    width: 300px;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-evenly;
+
+}
+
+.icono {
+    width: 128px;
+    height: 128px;
+    border: 1px solid rgb(216, 215, 215);
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+h2 {
+    font-size: 30px;
+}
+
+i {
+    font-size: 60px;
+}
+
+.fa-html5 {
+    color: #e54d26;
+    ;
+}
+
+.fa-css3-alt {
+    color: #3d8fc6;
+}
+
+.fa-sass {
+    color: #c69;
+}
+
+.fa-js {
+    color: #f0db4f;
+}
+
+.fa-react {
+    color: #61dafb;
+}
+
+.fa-git-alt {
+    color: #f34f29;
+}

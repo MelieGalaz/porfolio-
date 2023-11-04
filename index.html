@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="estilos.css">
     <title>Document</title>
 </head>
@@ -11,13 +14,14 @@
 <body>
     <header>
         <div class="menu">
+            <!--agregue nav para menu de navegacion-->
             <nav>
                 <ul>
                     <li>
                         <a href="#hola">HOLA</a>
                     </li>
                     <li>
-                        <a href="#">CONOCIMIENTOS</a>
+                        <a href="#conocimientos">CONOCIMIENTOS</a>
                     </li>
                     <li>
                         <a href="#">PROYECTOS</a>
@@ -30,6 +34,7 @@
         </div>
     </header>
     <main>
+        <!--seccion de saludo inicial -->
         <section>
             <div id="hola">
                 <div class="hola--presentacion">
@@ -42,6 +47,40 @@
                 </div>
                 <div class="imagen-chica">
                     <img src="/imagenes/chica-color.svg" alt="ilustracion-chica-color">
+                </div>
+            </div>
+        </section>
+        <section>
+            <!--seccion donde muestro conomientos optenidos un div que guarda todo despues se separo en div para cada lenguaje-->
+            <div id="conocimientos">
+                <h2>Mis conocimientos</h2>
+                <p>«Me gusta entrar en áreas donde tengo miedo. El miedo es una señal de que voy en la dirección
+                    correcta.» — April Greiman</p>
+                <div class="contenedor-conocimientos">
+                    <div class="icono">
+                        <i class="fa-brands fa-html5"></i>
+                        <p> HTML 5</p>
+                    </div>
+                    <div class="icono">
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <p>CSS 3</p>
+                    </div>
+                    <div class="icono">
+                        <i class="fa-brands fa-sass"></i>
+                        <p>Sass</p>
+                    </div>
+                    <div class="icono">
+                        <i class="fa-brands fa-js"></i>
+                        <p>JavaScrip</p>
+                    </div>
+                    <div class="icono">
+                        <i class="fa-brands fa-react"></i>
+                        <p>React</p>
+                    </div>
+                    <div class="icono">
+                        <i class="fa-brands fa-git-alt"></i>
+                        <p>GIT</p>
+                    </div>
                 </div>
             </div>
         </section>
