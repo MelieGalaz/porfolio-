@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <title>Document</title>
+<link rel="stylesheet" href="./Document_files/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"><link rel="stylesheet" href="./Document_files/estilos.css"></head>
+
+<body>
+    <header>
+        <div class="menu">
+            <!--agregue nav para menu de navegacion-->
+            <nav>
+                <ul>
+                    <li>
+                        <a href="http://127.0.0.1:5500/index.html#hola">HOLA</a>
+                    </li>
+                    <li>
+                        <a href="http://127.0.0.1:5500/index.html#conocimientos">CONOCIMIENTOS</a>
+                    </li>
+                    <li>
+                        <a href="http://127.0.0.1:5500/index.html#">PROYECTOS</a>
+                    </li>
+                    <li>
+                        <a href="http://127.0.0.1:5500/index.html#">CONTACTO</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!--seccion de saludo inicial -->
+        <section>
+            <div id="hola">
+                <div class="hola--presentacion">
+                    <p class="saludos">¡HOLA! Soy </p>
+                    <h1>Melie Galaz</h1>
+                    <p class="saludo__desarrollo">Desarrolladora</p>
+                    <button class="boton">
+                        <a href="http://127.0.0.1:5500/index.html#">LO QUE HAGO</a>
+                    </button>
+                </div>
+                <div class="imagen-chica">
+                    <img src="./Document_files/chica-color.svg" alt="ilustracion-chica-color">
+                </div>
+            </div>
+        </section>
+        <section>
+            <!--seccion donde muestro conomientos optenidos un div que guarda todo despues se separo en div para cada lenguaje-->
+            <div id="conocimientos">
+                <h2>Mis conocimientos</h2>
+
+                <div class="contenedor-conocimientos">
+                    <div class="icono">
+                        <i class="fa-brands fa-html5"></i>
+                        <p> HTML 5</p>
+                    </div>
+                    <div class="icono">
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <p>CSS 3</p>
+                    </div>
+                    <div class="icono">
+                        <i class="fa-brands fa-sass"></i>
+                        <p>Sass</p>
+                    </div>
+                    <div class="icono">
+                        <i class="fa-brands fa-js"></i>
+                        <p>JavaScrip</p>
+                    </div>
+                    <div class="icono">
+                        <i class="fa-brands fa-react"></i>
+                        <p>React</p>
+                    </div>
+                    <div class="icono">
+                        <i class="fa-brands fa-git-alt"></i>
+                        <p>GIT</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="frase">
+            <p>«Me gusta entrar en áreas donde tengo miedo. El miedo es una señal de que voy en la dirección
+                correcta.» <span> April Greiman </span></p>
+
+        </div>
+        <section class="proyectos">
+            <h2>Mis Proyectos</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum consequuntur tenetur laboriosam illo, fugit
+                magni aspernatur suscipit saepe at distinctio incidunt ad minima, commodi ipsa quaerat non tempore.
+                Atque, tenetur.</p>
+            <div class="proyectos_contenedor">
+                <div class="proyecto_imagen">
+                    <img src="./Document_files/porfolio.svg" alt="">
+                    <h3>PORFOLIO</h3>
+                </div>
+                <div class="proyecto_imagen">
+                    <img src="./Document_files/generador_memes.svg" alt="imagen_memes">
+                    <h3>Generador de memes</h3>
+                </div>
+                <div class="proyecto_imagen">
+                    <img src="./Document_files/martch_3.svg" alt="juegos">
+                    <h3>Match 3</h3>
+                </div>
+                <div class="proyecto_imagen">
+                    <img src="./Document_files/controlador_gastos.svg" alt="control de gastos">
+                    <h3>Controlador de gastos</h3>
+                </div>
+                <div class="proyecto_imagen">
+                    <img src="./Document_files/calendario.svg" alt="Adminitrador de reuniones">
+                    <h3>Administrador de reuniones</h3>
+                </div>
+                <div class="proyecto_imagen">
+                    <img src="./Document_files/app.svg" alt="aplicaciones imagen">
+                    <h3>Todo app</h3>
+                </div>
+                <div class="proyecto_imagen">
+                    <img src="./Document_files/buscador_peliculas.svg" alt="Buscador de peliculas">
+                    <h3>Buscador de peliculas</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
