@@ -27,7 +27,7 @@
                         <a href="#proyectos">PROYECTOS</a>
                     </li>
                     <li>
-                        <a href="#">CONTACTO</a>
+                        <a href="#contacto">CONTACTO</a>
                     </li>
                 </ul>
             </nav>
@@ -96,47 +96,48 @@
                     magni aspernatur suscipit saepe at distinctio incidunt ad minima, commodi ipsa quaerat non tempore.
                     Atque, tenetur.</p>
                 <div class="proyectos_contenedor">
-                    <div class="proyecto_imagen">
-                        <a href="#hola"></a>
+
+                    <a class="proyecto_imagen" target="_blank" href="#hola">porfoli
                         <img src="/imagenes/porfolio.svg" alt="">
-                        <h3>PORFOLIO</h3>
-                    </div>
-                    <div class="proyecto_imagen">
+                        <h3 class="imagen_nombre">Porfolio</h3>
+                    </a>
+                    <a class="proyecto_imagen" href="#">
                         <img src="/imagenes/generador_memes.svg" alt="imagen_memes">
-                        <h3>Generador de memes</h3>
-                    </div>
-                    <div class="proyecto_imagen">
+                        <h3 class="imagen_nombre">Generador de memes</h3>
+                    </a>
+                    <a class="proyecto_imagen" href="#">
                         <img src="/imagenes/martch_3.svg" alt="juegos">
-                        <h3>Match 3</h3>
-                    </div>
-                    <div class="proyecto_imagen">
+                        <h3 class="imagen_nombre">Match 3</h3>
+                    </a>
+                    <a class="proyecto_imagen" href="#">
                         <img src="/imagenes/controlador_gastos.svg" alt="control de gastos">
-                        <h3>Controlador de gastos</h3>
-                    </div>
-                    <div class="proyecto_imagen">
+                        <h3 class="imagen_nombre">Controlador de gastos</h3>
+                    </a>
+                    <a class="proyecto_imagen" href="#">
                         <img src="/imagenes/calendario.svg" alt="Adminitrador de reuniones">
-                        <h3>Administrador de reuniones</h3>
-                    </div>
-                    <div class="proyecto_imagen">
+                        <h3 class="imagen_nombre">Administrador de reuniones</h3>
+                    </a>
+                    <a class="proyecto_imagen" href="#">
                         <img src="/imagenes/app.svg" alt="aplicaciones imagen">
-                        <h3>Todo app</h3>
-                    </div>
-                    <div class="proyecto_imagen">
+                        <h3 class="imagen_nombre">Todo app</h3>
+                    </a>
+                    <a class="proyecto_imagen" href="#">
                         <img src="/imagenes/peliculas.svg" alt="Buscador de peliculas">
-                        <h3>Buscador de peliculas</h3>
-                    </div>
+                        <h3 class="imagen_nombre">Buscador de peliculas</h3>
+                    </a>
                 </div>
             </div>
         </section>
         <section>
             <div id="contacto">
+                <div class="contactame">
                 <h2>CONTACTAME</h2>
                 <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum cumque fugiat illum, aut id nulla!
                     Officia dolor reprehenderit sunt vel possimus architecto, provident saepe ex illo fuga natus earum
                     pariatur?</P>
                 <ul class="redes">
                     <li class="redes_iconos">
-                        <i  class="fa-brands fa-github-alt"></i>
+                        <i class="fa-brands fa-github-alt"></i>
                         <a class="iconos_contacto" target="_blank" href="https://github.com/MelieGalaz">MelieGalaz</a>
 
                     </li>
@@ -151,9 +152,54 @@
                             href="mailto:galazmely27@gmail.con">galazmely27@gmail.com</a>
                     </li>
                 </ul>
+                </div>
+                <form class="formulario">
+                    <h2>ESCRIBIME</h2>
+                        <div class="input_container">
+                            <label for="input_nombre">Nombre</label>
+                            <input type="text" placeholder="nombre" name="nombre" class="form_input" required>
+                        </div>
+                        <div class="input_container">
+                            <label for="input_nombre">Apellido</label>
+                            <input type="text" placeholder="apellido" name="apellido" class="form_input" required>
+                        </div>
+                        <div class="input_container">
+                            <label for="input_email">E-mail</label>
+                            <input type="email" placeholder="tu e-mail" name="email" class="form_input" required>
+                        </div>
+                        <div class="input_container">
+                            <label for="input_mensaje">Mensaje</label>
+                            <textarea type="textarea" placeholder="escriba aqui su mensaje" name="mensaje" rows="10" cols="40" maxlength="100" class="form_input" required></textarea>
+                        </div>
+                        <input class="boton" type="submit" value="Enviar" />
+                </form>
             </div>
         </section>
     </main>
+    <footer>
+            <ul class="pie_redes">
+                <li class="pie_iconos">
+                    <a class="iconos_contacto" target="_blank" href="https://github.com/MelieGalaz">
+                    <i class="fa-brands fa-github-alt"></i>
+                    </a>
+
+                </li>
+                <li class="pie_iconos">
+                    <a class="iconos_contacto" target="_blank"
+                    href="https://www.linkedin.com/in/mely-galaz-9638bb246/"> 
+                    <i class="fa-brands fa-linkedin"></i>
+                   </a>
+                </li>
+                <li class="pie_iconos">
+                    <a class="iconos_contacto" target="_blank"
+                        href="mailto:galazmely27@gmail.con">
+                    <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </li>
+            </ul>
+        
+    </footer>
 </body>
+
 
 </html>
