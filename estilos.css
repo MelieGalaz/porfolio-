@@ -23,9 +23,54 @@ main {
 .menu {
     display: none;
 }
+@media (min-width:970px) {
+    header{
+        width: 100%;
+        height: 70px;
+        background-color: #1188A4;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        position: fixed;
+        margin-top: 0;
+        
+    }
+    .menu-media{
+        width: 100%;
+        height: 135px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .menu-media li{
+        margin: 43px;
+        font-size: 1.3em;
+        margin-bottom: 100px;
+    }
+    li a{
+        color: black;
+        font-weight: 400;
+    }
+    .contacto{
+        color: black;
+        padding: 2px 5px 2px 5px;
+        text-align: center;
+        border-radius: 20px;
+        background-color: aliceblue;
+    }
+    a:hover{
+        color: white;
+    }
+    .contacto:hover {
+        color:black;
+        box-shadow: 0 0 20px rgba(0, 255, 221, 0.6);
+    }
+
+}
 
 #hola {
-    height: 570px;
+    height: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,15 +94,19 @@ main {
     margin-top: 24px;
 
 }
+img{
+    display: block;
+    width: 100%;
+}
 
 h1 {
     color: #1188A4;
-    font-size: 60px;
+    font-size: 4em;
     text-shadow: 3px 1px 4px rgb(184, 183, 183);
 }
 
 .boton {
-    font-size: 15px;
+    font-size:0.8em;
     color: white;
     height: 40px;
     width: 128px;
@@ -71,7 +120,6 @@ h1 {
 .boton:hover {
     color: rgba(255, 255, 255, 1);
     box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
-    transition: 0.2s;
 }
 
 a {
@@ -81,24 +129,27 @@ a {
 
 .saludos {
     color: black;
-    font-size: 40px;
+    font-size: 2.3em;
     font-weight: 900;
 }
 
 .saludo__desarrollo {
-    font-size: 30px;
+    font-size:2em;
     color: rgb(90, 90, 90);
     text-align: center;
 }
 
-p {
-    font-size: 18px;
+p, .texto_contacto {
+    font-size: 1.3em;
     color: rgb(90, 90, 90);
     text-align: center;
+}
+.texto_contacto{
+    text-align: left;
 }
 
 #conocimientos {
-    height: 750px;
+    height: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -132,13 +183,14 @@ p {
 
 }
 
+
 .icono:hover {
     border: 2px solid #1188A4;
-    
+
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 2.1em;
     font-weight: 900;
 }
 
@@ -172,7 +224,7 @@ i {
 }
 
 .frase {
-    height: 200px;
+    height: 100%;
     background-color: #1188A4;
     padding: 20px;
     display: flex;
@@ -188,7 +240,7 @@ span {
 }
 
 .proyectos_contenedor {
-    height: 200px;
+    height: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -207,12 +259,11 @@ span {
 .proyecto_imagen:hover {
     color: rgba(255, 255, 255, 1);
     box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
-    transition: all 0.2s ;
 }
 
 
 #proyectos {
-    height: 2733px;
+    height: 98%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -225,11 +276,16 @@ span {
     color: black;
     text-align: center;
     margin-top: 15px;
-    font-size: 22px;
+    font-size: 1.5em
 }
-
+#contacto{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 .contactame {
-    height: 422px;
+    height:50%;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -239,7 +295,7 @@ span {
 
 .iconos_contacto {
     color: black;
-    font-size: 20px;
+    font-size:1.1em;
 }
 
 ul {
@@ -263,7 +319,7 @@ ul {
 }
 
 .formulario {
-    height: 550px;
+    height: 60%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -285,36 +341,41 @@ textarea {
     margin-top: 7px;
     outline: none;
 }
-textarea:focus, input:focus {
-    box-shadow:0 0 8px rgba(0, 255, 221, 0.6);
-    
+
+textarea:focus,
+input:focus {
+    box-shadow: 0 0 8px rgba(0, 255, 221, 0.6);
+
 }
+
 label {
-    font-size: 20px;
+    font-size: 1.2em;
     font-weight: 500;
 }
-footer{
+
+footer {
     background-color: #1188A4;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 
 }
-.pie_redes{
+
+.pie_redes {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
 }
-.pie_iconos{
+
+.pie_iconos {
     background-color: white;
     height: 40px;
     width: 40px;
     border-radius: 30px;
     display: flex;
     align-items: center;
-    justify-content:center ;
+    justify-content: center;
     padding-top: 5px;
-    
-}
 
+}

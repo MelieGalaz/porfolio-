@@ -12,11 +12,10 @@
 </head>
 
 <body>
-    <header>
-        <div class="menu">
+    <header >
             <!--agregue nav para menu de navegacion-->
             <nav>
-                <ul>
+                <ul class="menu-media">
                     <li>
                         <a href="#hola">HOLA</a>
                     </li>
@@ -26,12 +25,11 @@
                     <li>
                         <a href="#proyectos">PROYECTOS</a>
                     </li>
-                    <li>
-                        <a href="#contacto">CONTACTO</a>
+                    <li  >
+                        <a class="contacto" href="#contacto">CONTACTO</a>
                     </li>
                 </ul>
             </nav>
-        </div>
     </header>
     <main>
         <!--seccion de saludo inicial -->
@@ -131,73 +129,74 @@
         <section>
             <div id="contacto">
                 <div class="contactame">
-                <h2>CONTACTAME</h2>
-                <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum cumque fugiat illum, aut id nulla!
-                    Officia dolor reprehenderit sunt vel possimus architecto, provident saepe ex illo fuga natus earum
-                    pariatur?</P>
-                <ul class="redes">
-                    <li class="redes_iconos">
-                        <i class="fa-brands fa-github-alt"></i>
-                        <a class="iconos_contacto" target="_blank" href="https://github.com/MelieGalaz">MelieGalaz</a>
+                    <h2>CONTACTAME</h2>
+                    <p class="texto_contacto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum cumque fugiat illum, aut id nulla!
+                        Officia dolor reprehenderit sunt vel possimus architecto, provident saepe ex illo fuga natus
+                        earum
+                        pariatur?</p>
+                    <ul class="redes">
+                        <li class="redes_iconos">
+                            <i class="fa-brands fa-github-alt"></i>
+                            <a class="iconos_contacto" target="_blank"
+                                href="https://github.com/MelieGalaz">MelieGalaz</a>
 
-                    </li>
-                    <li class="redes_iconos">
-                        <i class="fa-brands fa-linkedin"></i>
-                        <a class="iconos_contacto" target="_blank"
-                            href="https://www.linkedin.com/in/mely-galaz-9638bb246/">Mely Galaz</a>
-                    </li>
-                    <li class="redes_iconos">
-                        <i class="fa-solid fa-envelope"></i>
-                        <a class="iconos_contacto" target="_blank"
-                            href="mailto:galazmely27@gmail.con">galazmely27@gmail.com</a>
-                    </li>
-                </ul>
+                        </li>
+                        <li class="redes_iconos">
+                            <i class="fa-brands fa-linkedin"></i>
+                            <a class="iconos_contacto" target="_blank"
+                                href="https://www.linkedin.com/in/mely-galaz-9638bb246/">Mely Galaz</a>
+                        </li>
+                        <li class="redes_iconos">
+                            <i class="fa-solid fa-envelope"></i>
+                            <a class="iconos_contacto" target="_blank"
+                                href="mailto:galazmely27@gmail.con">galazmely27@gmail.com</a>
+                        </li>
+                    </ul>
                 </div>
                 <form class="formulario">
                     <h2>ESCRIBIME</h2>
-                        <div class="input_container">
-                            <label for="input_nombre">Nombre</label>
-                            <input type="text" placeholder="nombre" name="nombre" class="form_input" required>
-                        </div>
-                        <div class="input_container">
-                            <label for="input_nombre">Apellido</label>
-                            <input type="text" placeholder="apellido" name="apellido" class="form_input" required>
-                        </div>
-                        <div class="input_container">
-                            <label for="input_email">E-mail</label>
-                            <input type="email" placeholder="tu e-mail" name="email" class="form_input" required>
-                        </div>
-                        <div class="input_container">
-                            <label for="input_mensaje">Mensaje</label>
-                            <textarea type="textarea" placeholder="escriba aqui su mensaje" name="mensaje" rows="10" cols="40" maxlength="100" class="form_input" required></textarea>
-                        </div>
-                        <input class="boton" type="submit" value="Enviar" />
+                    <div class="input_container">
+                        <label for="input_nombre">Nombre</label>
+                        <input type="text" placeholder="nombre" name="nombre" class="form_input" required>
+                    </div>
+                    <div class="input_container">
+                        <label for="input_nombre">Apellido</label>
+                        <input type="text" placeholder="apellido" name="apellido" class="form_input" required>
+                    </div>
+                    <div class="input_container">
+                        <label for="input_email">E-mail</label>
+                        <input type="email" placeholder="tu e-mail" name="email" class="form_input" required>
+                    </div>
+                    <div class="input_container">
+                        <label for="input_mensaje">Mensaje</label>
+                        <textarea type="textarea" placeholder="escriba aqui su mensaje" name="mensaje" rows="10"
+                            cols="40" maxlength="100" class="form_input" required></textarea>
+                    </div>
+                    <input class="boton" type="submit" value="Enviar" />
                 </form>
             </div>
         </section>
     </main>
     <footer>
-            <ul class="pie_redes">
-                <li class="pie_iconos">
-                    <a class="iconos_contacto" target="_blank" href="https://github.com/MelieGalaz">
+        <ul class="pie_redes">
+            <li class="pie_iconos">
+                <a class="iconos_contacto" target="_blank" href="https://github.com/MelieGalaz">
                     <i class="fa-brands fa-github-alt"></i>
-                    </a>
+                </a>
 
-                </li>
-                <li class="pie_iconos">
-                    <a class="iconos_contacto" target="_blank"
-                    href="https://www.linkedin.com/in/mely-galaz-9638bb246/"> 
+            </li>
+            <li class="pie_iconos">
+                <a class="iconos_contacto" target="_blank" href="https://www.linkedin.com/in/mely-galaz-9638bb246/">
                     <i class="fa-brands fa-linkedin"></i>
-                   </a>
-                </li>
-                <li class="pie_iconos">
-                    <a class="iconos_contacto" target="_blank"
-                        href="mailto:galazmely27@gmail.con">
+                </a>
+            </li>
+            <li class="pie_iconos">
+                <a class="iconos_contacto" target="_blank" href="mailto:galazmely27@gmail.con">
                     <i class="fa-solid fa-envelope"></i>
-                    </a>
-                </li>
-            </ul>
-        
+                </a>
+            </li>
+        </ul>
+
     </footer>
 </body>
 
