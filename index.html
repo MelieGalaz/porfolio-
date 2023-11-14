@@ -8,28 +8,28 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="estilos.css">
-    <title>Document</title>
+    <title class="titulo_pagina"> 👩‍💻 Melie Galaz</title>
 </head>
 
 <body>
-    <header >
-            <!--agregue nav para menu de navegacion-->
-            <nav>
-                <ul class="menu-media">
-                    <li>
-                        <a class="a_menu" href="#hola">HOLA</a>
-                    </li>
-                    <li>
-                        <a class="a_menu" href="#conocimientos">CONOCIMIENTOS</a>
-                    </li>
-                    <li>
-                        <a class="a_menu" href="#proyectos">PROYECTOS</a>
-                    </li>
-                    <li  >
-                        <a class="contacto" href="#contacto">CONTACTO</a>
-                    </li>
-                </ul>
-            </nav>
+    <header>
+        <!--agregue nav para menu de navegacion-->
+        <nav>
+            <ul class="menu-media">
+                <li>
+                    <a class="a_menu" href="#hola">HOLA</a>
+                </li>
+                <li>
+                    <a class="a_menu" href="#conocimientos">CONOCIMIENTOS</a>
+                </li>
+                <li>
+                    <a class="a_menu" href="#proyectos">PROYECTOS</a>
+                </li>
+                <li>
+                    <a class="contacto" href="#contacto">CONTACTO</a>
+                </li>
+            </ul>
+        </nav>
     </header>
     <main>
         <!--seccion de saludo inicial -->
@@ -82,55 +82,71 @@
             </div>
         </section>
         <div class="frase">
-            <p>«Me gusta entrar en áreas donde tengo miedo. El miedo es una señal de que voy en la dirección
+            <p class="texto_centrar">«Me gusta entrar en áreas donde tengo miedo. El miedo es una señal de que voy en la
+                dirección
                 correcta.» <span> April Greiman </span></p>
 
         </div>
         <section>
             <div id="proyectos">
                 <h2>Mis Proyectos</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum consequuntur tenetur laboriosam illo,
+                <p class="texto_centrar">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum consequuntur
+                    tenetur laboriosam illo,
                     fugit
                     magni aspernatur suscipit saepe at distinctio incidunt ad minima, commodi ipsa quaerat non tempore.
                     Atque, tenetur.</p>
                 <div class="proyectos_contenedor">
-
-                    <a class="proyecto_imagen" target="_blank" href="#hola">porfoli
-                        <img src="/imagenes/porfolio.svg" alt="">
-                        <h3 class="imagen_nombre">Porfolio</h3>
-                    </a>
-                    <a class="proyecto_imagen" href="#">
-                        <img src="/imagenes/generador_memes.svg" alt="imagen_memes">
-                        <h3 class="imagen_nombre">Generador de memes</h3>
-                    </a>
-                    <a class="proyecto_imagen" href="#">
-                        <img src="/imagenes/martch_3.svg" alt="juegos">
-                        <h3 class="imagen_nombre">Match 3</h3>
-                    </a>
-                    <a class="proyecto_imagen" href="#">
-                        <img src="/imagenes/controlador_gastos.svg" alt="control de gastos">
-                        <h3 class="imagen_nombre">Controlador de gastos</h3>
-                    </a>
-                    <a class="proyecto_imagen" href="#">
-                        <img src="/imagenes/calendario.svg" alt="Adminitrador de reuniones">
-                        <h3 class="imagen_nombre">Administrador de reuniones</h3>
-                    </a>
-                    <a class="proyecto_imagen" href="#">
-                        <img src="/imagenes/app.svg" alt="aplicaciones imagen">
-                        <h3 class="imagen_nombre">Todo app</h3>
-                    </a>
-                    <a class="proyecto_imagen" href="#">
-                        <img src="/imagenes/peliculas.svg" alt="Buscador de peliculas">
-                        <h3 class="imagen_nombre">Buscador de peliculas</h3>
-                    </a>
+                    <div class="proyecto_imagen">
+                        <a target="_blank" href="#hola">porfoli
+                            <img src="/imagenes/porfolio.svg" alt="">
+                            <h3 class="imagen_nombre">Porfolio</h3>
+                        </a>
+                    </div>
+                    <div class="proyecto_imagen">
+                        <a href="#">
+                            <img src="/imagenes/generador_memes.svg" alt="imagen_memes">
+                            <h3 class="imagen_nombre">Generador de memes</h3>
+                        </a>
+                    </div>
+                    <div class="proyecto_imagen">
+                        <a  href="#">
+                            <img src="/imagenes/martch_3.svg" alt="juegos">
+                            <h3 class="imagen_nombre">Match 3</h3>
+                        </a>
+                    </div>
+                    <div class="proyecto_imagen">
+                        <a  href="#">
+                            <img src="/imagenes/controlador_gastos.svg" alt="control de gastos">
+                            <h3 class="imagen_nombre">Controlador de gastos</h3>
+                        </a>
+                    </div>
+                    <div class="proyecto_imagen">
+                        <a href="#">
+                            <img src="/imagenes/calendario.svg" alt="Adminitrador de reuniones">
+                            <h3 class="imagen_nombre">Administrador de reuniones</h3>
+                        </a>
+                    </div>
+                    <div class="proyecto_imagen">
+                        <a  href="#">
+                            <img src="/imagenes/app.svg" alt="aplicaciones imagen">
+                            <h3 class="imagen_nombre">Todo app</h3>
+                        </a>
+                    </div>
+                    <div class="proyecto_imagen">
+                        <a  href="#">
+                            <img src="/imagenes/peliculas.svg" alt="Buscador de peliculas">
+                            <h3 class="imagen_nombre">Buscador de peliculas</h3>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
-        <section>
+        <section class="secion_contacto">
             <div id="contacto">
                 <div class="contactame">
                     <h2>CONTACTAME</h2>
-                    <p class="texto_contacto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum cumque fugiat illum, aut id nulla!
+                    <p class="texto_contacto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum cumque
+                        fugiat illum, aut id nulla!
                         Officia dolor reprehenderit sunt vel possimus architecto, provident saepe ex illo fuga natus
                         earum
                         pariatur?</p>
@@ -186,7 +202,8 @@
 
             </li>
             <li class="pie_iconos">
-                <a class="iconos_contacto_footer" target="_blank" href="https://www.linkedin.com/in/mely-galaz-9638bb246/">
+                <a class="iconos_contacto_footer" target="_blank"
+                    href="https://www.linkedin.com/in/mely-galaz-9638bb246/">
                     <i class="fa-brands fa-linkedin"></i>
                 </a>
             </li>
