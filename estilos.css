@@ -28,27 +28,27 @@ main {
     header {
         width: 100%;
         height: 70px;
-        background-color: #1188A4;
+        background: linear-gradient(#004d5e 0%, #1188A4 30%, rgb(182, 214, 247) 100%);
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
         position: fixed;
         margin-top: 0;
+        box-shadow: 0 0 10px rgb(119 112 112);
     }
 
     .menu-media {
-        width: 100%;
-        height: 135px;
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
         align-items: center;
+        margin-right: 30px;
     }
 
+
     .menu-media li {
-        margin: 43px;
-        font-size: 1.3rem;
-        margin-bottom: 100px;
+        display: inline-block;
+        padding: 0 20px 180px 20px;
     }
 
     li a {
@@ -61,7 +61,8 @@ main {
         padding: 2px 5px 2px 5px;
         text-align: center;
         border-radius: 20px;
-        background-color: aliceblue;
+        background-color: #d4f0f7;
+
     }
 
     .a_menu:hover {
@@ -87,10 +88,11 @@ main {
 @media (min-width:970px) {
     #hola {
         height: 100%;
-        margin-top: 150px;
+        margin-top: 80px;
         flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
+        padding: 190px 20px;
 
     }
 }
@@ -169,7 +171,7 @@ a {
 .texto_centrar,
 .texto_contacto {
     font-size: 1.3rem;
-    color: rgb(90, 90, 90);
+    color: rgb(75 74 74);
     text-align: center;
 }
 
@@ -190,15 +192,24 @@ a {
     }
 }
 
+.section_conocimientos {
+    background-color: #e7f5f8;
+
+}
+
 #conocimientos {
     height: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
     margin-top: 50px;
-    background-color: #e7f5f8;
 
+}
+
+@media (min-width:970px) {
+    #conocimientos {
+        padding: 117px 20px;
+    }
 }
 
 .contenedor-conocimientos {
@@ -324,7 +335,7 @@ span {
     }
 }
 
- img {
+img {
     object-fit: contain;
     aspect-ratio: 3/2;
 }
@@ -351,7 +362,7 @@ span {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 100px 20px;
     margin-top: 60px;
     gap: 20px;
 }
@@ -379,23 +390,28 @@ span {
         width: 85%;
         height: 90%;
         justify-content: space-evenly;
-        margin: 77px;
+        margin: 50px;
         padding: 15px;
         gap: 17px;
+        background-color: white;
+        box-shadow: 0 0 10px rgb(180, 180, 180);
     }
 }
-@media (min-width:970px){
-    .secion_contacto{
+
+@media (min-width:970px) {
+    .secion_contacto {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 50px;
-        margin-bottom: 50px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        background-color: #e7f5f8;
+
     }
 }
 
 .contactame {
-    height:100%;
+    height: 100%;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -409,12 +425,6 @@ span {
     font-size: 1.1rem;
 }
 
-.iconos_contacto:hover {
-    color: #1d768a;
-    border-bottom: 1px solid #1d768a;
-    ;
-}
-
 ul {
     height: 265px;
     width: 300px;
@@ -424,19 +434,28 @@ ul {
     justify-content: space-evenly;
 }
 
-.fa-github-alt,
-.fa-linkedin,
-.fa-envelope {
+.color_hover {
     font-size: 1.56rem;
     color: #1188A4;
 }
 
+.color_hover:hover {
+    color: #1d768a;
+    font-size: 1.90rem;
+}
+
 .redes_iconos {
     padding: 10px;
+    gap: 6px;
+}
+
+.redes_iconos .iconos_contacto {
+    margin-left: 5px;
 }
 
 .formulario {
     height: 100%;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
