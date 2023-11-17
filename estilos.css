@@ -495,7 +495,6 @@ img {
 }
 
 .formulario {
-    height: 100%;
     max-width: 600px;
     display: flex;
     flex-direction: column;
