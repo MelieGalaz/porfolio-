@@ -181,8 +181,9 @@ a {
     color: rgb(90, 90, 90);
     text-align: center;
 }
-@media (min-width:970px){
-    .saludo__desarrollo{
+
+@media (min-width:970px) {
+    .saludo__desarrollo {
         text-align: left;
     }
 }
@@ -596,7 +597,8 @@ footer {
     padding-top: 8px;
 
 }
-.final_footer{
-    font: size 1.5rem ;
+
+.final_footer {
+    font: size 1.5rem;
     padding-bottom: 40px;
 }
