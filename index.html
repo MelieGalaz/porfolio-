@@ -45,14 +45,14 @@
 
                 </div>
                 <div class="imagen-chica">
-                    <img src="/imagenes/chica-color.svg" alt="chica pintando computadora">
+                    <img src="imagenes/chica-color.svg" alt="chica pintando computadora">
                 </div>
             </div>
         </section>
         <section class="section_conocimientos">
             <!--seccion donde muestro conomientos optenidos un div que guarda todo despues se separo en div para cada lenguaje-->
             <div id="conocimientos">
-                <h2>Mis conocimientos</h2>
+                <h2 class="titulos">Mis conocimientos</h2>
 
                 <div class="contenedor-conocimientos">
                     <div class="icono">
@@ -94,48 +94,48 @@
         <section>
             <!--seccion de proyectos realizados-->
             <div id="proyectos">
-                <h2>Mis Proyectos</h2>
+                <h2 class="titulos">Mis Proyectos</h2>
                 <p class="texto_centrar">A continuación están los proyectos que realice por mi paso por Ada</p>
                 <div class="proyectos_contenedor">
                     <div class="proyecto_imagen">
                         <a target="_blank" href="#hola">porfoli
-                            <img src="/imagenes/porfoli-1.PNG" alt="imagen del porfolio">
+                            <img src="imagenes/porfoli-1.PNG" alt="imagen del porfolio">
                             <h3 class="imagen_nombre">Porfolio</h3>
                         </a>
                     </div>
                     <div class="proyecto_imagen">
                         <a href="#">
-                            <img src="/imagenes/generador_memes.svg" alt="chica con meme">
+                            <img src="imagenes/generador_memes.svg" alt="chica con meme">
                             <h3 class="imagen_nombre">Generador de memes</h3>
                         </a>
                     </div>
                     <div class="proyecto_imagen">
                         <a href="#">
-                            <img src="/imagenes/martch_3.svg" alt="joystick">
+                            <img src="imagenes/martch_3.svg" alt="joystick">
                             <h3 class="imagen_nombre">Match 3</h3>
                         </a>
                     </div>
                     <div class="proyecto_imagen">
                         <a href="#">
-                            <img src="/imagenes/controlador_gastos.svg" alt="alcancia chanchito">
+                            <img src="imagenes/controlador_gastos.svg" alt="alcancia chanchito">
                             <h3 class="imagen_nombre">Controlador de gastos</h3>
                         </a>
                     </div>
                     <div class="proyecto_imagen">
                         <a href="#">
-                            <img src="/imagenes/calendario.svg" alt="almanaque">
+                            <img src="imagenes/calendario.svg" alt="almanaque">
                             <h3 class="imagen_nombre">Administrador de reuniones</h3>
                         </a>
                     </div>
                     <div class="proyecto_imagen">
                         <a href="#">
-                            <img src="/imagenes/app.svg" alt="celular y chica">
+                            <img src="imagenes/app.svg" alt="celular y chica">
                             <h3 class="imagen_nombre">Todo app</h3>
                         </a>
                     </div>
                     <div class="proyecto_imagen">
                         <a href="#">
-                            <img src="/imagenes/peliculas.svg" alt="chicas en sillon">
+                            <img src="imagenes/peliculas.svg" alt="chicas en sillon">
                             <h3 class="imagen_nombre">Buscador de peliculas</h3>
                         </a>
                     </div>
@@ -146,7 +146,7 @@
             <!--seccion de contacto y fomulario-->
             <div id="contacto">
                 <div class="contactame">
-                    <h2>CONTÁCTAME</h2>
+                    <h2 class="titulos">CONTÁCTAME</h2>
                     <p class="texto_contacto">Acá podrá ver mis redes sociales y llenar un formulario si desea que yo lo
                         contacte para darle más información</p>
                     <ul class="redes">
@@ -169,29 +169,35 @@
                         </li>
                     </ul>
                 </div>
-                <form class="formulario">
-                    <h2>ESCRIBIME</h2>
+                <form action="https://formsubmit.co/galazmely27@gmail.com" method="POST" class="formulario">
+                    <h2 class="titulos">ESCRIBIME</h2>
                     <div class="input_container">
                         <label for="input_nombre">Nombre</label>
-                        <input type="text" placeholder="nombre" name="nombre" class="form_input" required>
+                        <input id="input_nombre" type="text" placeholder="nombre" name="nombre" class="form_input"
+                            required>
                     </div>
                     <div class="input_container">
-                        <label for="input_nombre">Apellido</label>
-                        <input type="text" placeholder="apellido" name="apellido" class="form_input" required>
+                        <label for="input_apellido">Apellido</label>
+                        <input id="input_apellido" type="text" placeholder="apellido" name="apellido" class="form_input"
+                            required>
                     </div>
                     <div class="input_container">
                         <label for="input_email">E-mail</label>
-                        <input type="email" placeholder="tu e-mail" name="email" class="form_input" required>
+                        <input id="input_email" type="email" placeholder="tu e-mail" name="email" class="form_input"
+                            required>
                     </div>
                     <div class="input_container">
                         <label for="input_mensaje">Mensaje</label>
-                        <textarea type="textarea" placeholder="escriba aqui su mensaje" name="mensaje" rows="10"
-                            cols="40" maxlength="100" class="form_input" required></textarea>
+                        <textarea id="input_mensaje" type="textarea" placeholder="escriba aqui su mensaje"
+                            name="mensaje" rows="10" cols="40" maxlength="100" class="form_input" required></textarea>
                     </div>
-                    <input class="boton" type="submit" value="Enviar" />
+                    <input href="#modal1" class="boton" type="submit" value="Enviar" />
                 </form>
+
             </div>
-        </section>
+        
+       
+    </section>
     </main>
     <footer>
         <!--seccion de pie de pagina-->
@@ -229,9 +235,22 @@
                 </a>
             </li>
         </ul>
+        
+        <div class="modal_contenedor">
+            <a class="modal_link " href="#modal1">Gracias!!!!</a>
+            <div id="modal1" class="modal_fondo">
+                <div class="modal_card movedown">
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h2 class="titulo_modal">GRACIAS</h2>
+                    <p class="modal_texto">Me pondre en contacto a la brevedad gracias por llegar al final de mi Porfolio</p>
+                    
+                </div>
+            </div>
+        </div>
         <p class="final_footer">🎇💖🎇Hecho por Melie Galaz🎇💖🎇</p>
     </footer>
-</body>
 
+
+</body>
 
 </html>
