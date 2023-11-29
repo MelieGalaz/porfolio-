@@ -382,6 +382,7 @@ span {
 .proyecto_imagen:hover {
     color: rgba(255, 255, 255, 1);
     box-shadow: 10px 0 30px rgb(38, 181, 224);
+    border: 1px solid #1188A4;
 }
 
 
@@ -614,7 +615,7 @@ footer {
 .modal_link:hover {
     color: rgb(13, 147, 236);
     text-shadow: 0 0 30px rgb(38, 181, 224);
-    box-shadow: 10px 0 30px rgb(38, 181, 224);
+    box-shadow: 10px 0 30px rgb(131, 216, 250);
 }
 
 .modal_fondo {
