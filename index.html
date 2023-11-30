@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="icon" href="imagenes/icons8-favicon-94.png" type="image/x-icon">
     <link rel="stylesheet" href="estilos.css">
-    <title> 👩‍💻 Melie Galaz</title>
+    <title>  Melie Galaz</title>
 </head>
 
 <body>
@@ -41,7 +42,7 @@
                     <h1>Melie Galaz</h1>
                     <p class="saludo__desarrollo">Desarrolladora, apasionada de los nuevos desafíos</p>
 
-                    <a class="boton" href="#proyectos">LO QUE HAGO</a>
+                    <a class="boton" href="#proyectos" tabindex="1">LO QUE HAGO</a>
 
                 </div>
                 <div class="imagen-chica">
@@ -174,24 +175,25 @@
                     <div class="input_container">
                         <label for="input_nombre">Nombre</label>
                         <input id="input_nombre" type="text" placeholder="nombre" name="nombre" class="form_input"
-                            required>
+                            required tabindex="2">
                     </div>
                     <div class="input_container">
                         <label for="input_apellido">Apellido</label>
                         <input id="input_apellido" type="text" placeholder="apellido" name="apellido" class="form_input"
-                            required>
+                            required tabindex="3">
                     </div>
                     <div class="input_container">
                         <label for="input_email">E-mail</label>
                         <input id="input_email" type="email" placeholder="tu e-mail" name="email" class="form_input"
-                            required>
+                            required tabindex="4
+                            ">
                     </div>
                     <div class="input_container">
                         <label for="input_mensaje">Mensaje</label>
                         <textarea id="input_mensaje" type="textarea" placeholder="escriba aqui su mensaje"
-                            name="mensaje" rows="10" cols="40" maxlength="100" class="form_input" required></textarea>
+                            name="mensaje" rows="10" cols="40" maxlength="100" class="form_input" required tabindex="5"></textarea>
                     </div>
-                    <input href="#modal1" class="boton" type="submit" value="Enviar" />
+                    <input href="#modal1" class="boton" type="submit" value="Enviar" tabindex="6" />
                 </form>
 
             </div>
@@ -237,10 +239,10 @@
         </ul>
 
         <div class="modal_contenedor">
-            <a class="modal_link " href="#modal1">Gracias!!!!</a>
+            <a class="modal_link " href="#modal1" tabindex="8">Gracias!!!!</a>
             <div id="modal1" class="modal_fondo">
                 <div class="modal_card movedown">
-                    <a href="#close" title="Close" class="close">X</a>
+                    <a href="#close" title="Close" class="close" tabindex="9">X</a>
                     <h2 class="titulo_modal">GRACIAS</h2>
                     <p class="modal_texto">Me pondre en contacto a la brevedad gracias por llegar al final de mi
                         Porfolio</p>
